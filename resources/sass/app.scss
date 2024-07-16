@@ -1,1 +1,121 @@
+
+// Font Coiny
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+// Zdefiniowanie niestandardowego koloru
+$primary: #EDFAE9;
+:root{
+    --bs-body-color: #EDFAE9 !important;
+    --bs-body-bg: #88BDBC !important;
+}
+body{
+    font-family: "Coiny", system-ui !important;
+}
+
+//Buttony / Play
+.btn-uknow{
+    width: 20%;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: $primary;
+    font-size: calc(0.75rem + 1vw) !important;
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+    box-shadow: 0 0 15px 0 #000000
+}
+
+//Search bar
+.search-bar{
+    width: 50%;
+}
+.search-bar .form-control::placeholder {
+
+    color: #EDFAE9;
+    opacity: 1; /* Ustawienie pełnej nieprzezroczystości dla lepszej widoczności */
+}
+
+//Tło Menu
+.bg-primary-uknow {
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+}
+.fs-mobile-menu-uknow{
+    font-size: calc(2rem + 1.5vw) !important;
+}
+//Hover ikon w menu
+.icon-color-uknow{
+    &:hover{
+        i{
+            color: #9AA6C3;
+            transition: .3s;
+            text-shadow: 0px 0px 20px rgba(154, 166, 195, 1);
+        } 
+    }
+}
+//Hover logo 
+.logo-uknow:hover{
+    border-radius: 50%;
+    transition: .3s box-shadow;
+    -webkit-box-shadow: -3px 1px 43px -10px rgba(154, 166, 195, 1);
+    -moz-box-shadow: -3px 1px 43px -10px rgba(154, 166, 195, 1);
+    box-shadow: -3px 1px 43px -5px rgba(154, 166, 195, 1);
+}
+
+//SEKCJA JUMBOTRON -------------------------------------
+
+//Jumbotron z grami
+.jumbotron-uknow{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.jumbotron-Title{
+    width: 100%;
+   box-shadow: 0 0 15px 0 #000000
+}
+.heart-jumbotron-uknow{
+    &:hover{
+        i{
+            color: red;
+            transition: .3s;
+            text-shadow: 0px 0px 20px red;
+        } 
+    }
+}
+.carousel-item {
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 18rem;
+    margin: 10px;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .jumbotron-Title{
+        width: 75%;
+    }
+    .search-bar{
+        width: 25%;
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .jumbotron-Title{
+        width: 50%;
+    }
+ }
+
 @import 'bootstrap/scss/bootstrap';
