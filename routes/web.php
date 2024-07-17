@@ -15,6 +15,10 @@ Route::get('/favorites-games', function () {
     return view('games.favorites-games');
 })->name('games.favourites-games');
 
+Route::get('/games', function () {
+    return view('games.all-games');
+})->name('games.all-games');
+
 Route::get('/leaderboards', function () {
     return view('games.leaderboards');
 })->name('games.leaderboards');

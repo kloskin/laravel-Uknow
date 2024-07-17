@@ -11,7 +11,20 @@ body{
     font-family: "Coiny", system-ui !important;
 }
 
-//Buttony / Play
+//KOLORY I BACKGROUNDY ----------------------------
+
+.bg-gradient-uknow{
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+}
+.bg-uknow{
+    background-color: var(--bs-body-bg);
+}
+
+
+//Buttony / Play ---------------------------------------------------
+
+//button w jumbotronie home
 .btn-uknow{
     width: 20%;
     padding: 5px;
@@ -21,7 +34,21 @@ body{
     font-size: calc(0.75rem + 1vw) !important;
     background: rgb(37,78,88);
     background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
-    box-shadow: 0 0 15px 0 #000000
+    box-shadow: 0 0 15px 0 #000000;
+}
+// Button All Games
+.btn-outline-sm-uknow{
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #807d7d;
+    &:hover{
+        background: rgb(37,78,88);
+        box-shadow: 0 0 15px 0 #464545;
+        transition: .5s;
+        color: $primary;
+     
+    }
 }
 
 //Search bar
@@ -33,6 +60,8 @@ body{
     color: #EDFAE9;
     opacity: 1; /* Ustawienie pełnej nieprzezroczystości dla lepszej widoczności */
 }
+
+//MENU --------------------------------------------------
 
 //Tło Menu
 .menu-uknow{
@@ -64,6 +93,17 @@ body{
     box-shadow: -3px 1px 43px -5px rgba(154, 166, 195, 1);
 }
 
+//DASHBOARD --------------------------------------------
+//dashboard menu
+
+.dashboard-uknow{
+    a{
+        text-decoration: none; 
+        color: $primary;
+       
+    }
+}
+
 //SEKCJA JUMBOTRON -------------------------------------
 
 //Jumbotron z grami
@@ -89,6 +129,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
+// CARD - GAMES
+
 //Style dla kart gier
 .card {
     width: 18rem;
@@ -130,8 +174,76 @@ body{
     background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
 }
 
+//Leaderboards --------------------------------------------------------
 
-//Game site
+//Kontener na ranking
+.leaderboard-container {
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #000000;
+    max-width: 90%;
+}
+
+//Tytuł
+.leaderboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+#leaderboards {
+    tr > th {
+        font-weight: normal;
+    }
+    //Top 1
+    .table-warning {
+        --bs-table-color: #000;
+        --bs-table-bg: #eed200;
+        --bs-table-border-color: #c9b100;
+        --bs-table-striped-bg: #e6cb00;
+        --bs-table-striped-color: #000;
+        --bs-table-active-bg: #d8bf00;
+        --bs-table-active-color: #000;
+        --bs-table-hover-bg: #c4ad00;
+        --bs-table-hover-color: #000;
+        color: var(--bs-table-color);
+        border-color: var(--bs-table-border-color);
+    }
+    //Top 2
+    .table-silver {
+        --bs-table-color: #000;
+        --bs-table-bg: #A7A7AD;
+        --bs-table-border-color: #7d7d83;
+        --bs-table-striped-bg: #96969b;
+        --bs-table-striped-color: #000;
+        --bs-table-active-bg: #8f8f96;
+        --bs-table-active-color: #000;
+        --bs-table-hover-bg: #838388;
+        --bs-table-hover-color: #000;
+        color: var(--bs-table-color);
+        border-color: var(--bs-table-border-color);
+    }
+    //Top 3
+    .table-bronze {
+        --bs-table-color: #000;
+        --bs-table-bg: #a7824e ;
+        --bs-table-border-color: #977547;
+        --bs-table-striped-bg: #977547;
+        --bs-table-striped-color: #000;
+        --bs-table-active-bg: #80643c;
+        --bs-table-active-color: #000;
+        --bs-table-hover-bg: #86693f;
+        --bs-table-hover-color: #000;
+        color: var(--bs-table-color);
+        border-color: var(--bs-table-border-color);
+    }
+}
+
+//Game site ------------------------------------------------------------------------
+
 .flex-center-container {
     display: flex;
     justify-content: center;

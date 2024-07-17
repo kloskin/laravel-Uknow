@@ -19,7 +19,11 @@
     </div>
     <div class="p-3 min-vh-45">
        
-            <h2>Games</h2>
+            <div class="d-flex align-items-center mx-5">
+                <h2>New Games</h2>
+                <a href="{{route('games.all-games')}}" class=" btn-outline-sm-uknow border ms-auto">All Games</a>
+            </div>
+       
             <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
