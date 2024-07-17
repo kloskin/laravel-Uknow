@@ -35,6 +35,9 @@ body{
 }
 
 //Tło Menu
+.menu-uknow{
+    height: 100%;
+}
 .bg-primary-uknow {
     background: rgb(37,78,88);
     background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
@@ -86,20 +89,94 @@ body{
     justify-content: center;
     align-items: center;
 }
+//Style dla kart gier
 .card {
     width: 18rem;
     margin: 10px;
+    border: none !important;
+    cursor: pointer;
 }
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.card-img-uknow {
+    width: 100%;
+    height: 100%; /* Zachowanie proporcji obrazu */
+    max-height: 200px; /* Maksymalna wysokość obrazu */
+    object-fit: cover;
+    &:hover{
+        background-color: #494949;
+        transition: .5s;
+    }
+}
+.card-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card-uknow:hover .card-hover-overlay {
+    opacity: 1;
+}
+.card-footer{
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+}
+
+
+//Game site
+.flex-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pełna wysokość widoku przeglądarki */
+    width: 100%; /* Pełna szerokość */
+}
+
+.game-site-uknow {
+    width: 100vmin; /* Ustawia szerokość na 50% mniejszego z wymiarów widoku (viewport) */
+    height: 95vmin; /* Ustawia wysokość na 50% mniejszego z wymiarów widoku (viewport) */
+    border: #000000 2px solid;
+    box-shadow: 0 0 10px 0 #000000;
+    background-color: #9AA6C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-    
+     //Podstrona z odpaleniem gry
+     .game-site-uknow {
+        width: 70vmin; /* Ustawia szerokość na 50% mniejszego z wymiarów widoku (viewport) */
+    }
  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    .menu-uknow{
+        height: 100vh;
+    }
+
+    //Podstrona z odpaleniem gry
+    .game-site-uknow {
+        width: 88vmin; /* Ustawia szerokość na 50% mniejszego z wymiarów widoku (viewport) */
+    }
+    
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+   
     .jumbotron-Title{
         width: 75%;
     }

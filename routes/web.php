@@ -7,6 +7,18 @@ Route::get('/', function () {
     return view('games.index');
 })->name('games.index');
 
+Route::get('/gra1', function () {
+    return view('games.game-site');
+})->name('games.game1');
+
+Route::get('/favorites-games', function () {
+    return view('games.favorites-games');
+})->name('games.favourites-games');
+
+Route::get('/leaderboards', function () {
+    return view('games.leaderboards');
+})->name('games.leaderboards');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
