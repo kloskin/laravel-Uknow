@@ -1,0 +1,71 @@
+body {
+    font-family: "Coiny", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #88BDBC;
+    margin: 0;
+    color: #EDFAE9;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #254E58;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 350px;
+    min-height: 350px;
+}
+
+#scrambled-word {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#answer {
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    font-family: "Coiny", sans-serif;
+}
+
+input {
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: "Coiny", sans-serif;
+    background-color: #112D32;
+    color: #EDFAE9;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#score, #rounds {
+    font-size: 18px;
+}
+
+.score-round-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between score and rounds */
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

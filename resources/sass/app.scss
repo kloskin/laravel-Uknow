@@ -20,7 +20,9 @@ body{
 .bg-uknow{
     background-color: var(--bs-body-bg);
 }
-
+.text-gradient-uknow{
+    color: rgb(37,78,88) !important;
+}
 
 //Buttony / Play ---------------------------------------------------
 
@@ -149,7 +151,7 @@ body{
 .card-img-uknow {
     width: 100%;
     height: 100%; /* Zachowanie proporcji obrazu */
-    max-height: 200px; /* Maksymalna wysokość obrazu */
+    max-height: 160px; /* Maksymalna wysokość obrazu */
     object-fit: cover;
     &:hover{
         background-color: #494949;
@@ -253,8 +255,8 @@ body{
 }
 
 .game-site-uknow {
-    width: 100vmin; /* Ustawia szerokość na 50% mniejszego z wymiarów widoku (viewport) */
-    height: 95vmin; /* Ustawia wysokość na 50% mniejszego z wymiarów widoku (viewport) */
+    width: 90vmin; /* Ustawia szerokość na 50% mniejszego z wymiarów widoku (viewport) */
+    height: 75vmin; /* Ustawia wysokość na 50% mniejszego z wymiarów widoku (viewport) */
     border: #000000 2px solid;
     box-shadow: 0 0 10px 0 #000000;
     background-color: #9AA6C3;
@@ -264,6 +266,39 @@ body{
     text-align: center;
 }
 
+
+//Pomoc
+.collapse{
+    visibility: visible;
+}
+.accordion-button:not(.collapsed) {
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+    color: #EDFAE9 !important;
+}
+.faq-item {
+    margin-bottom: 15px;
+}
+.faq-item h5 {
+    margin-bottom: 10px;
+}
+.contact-form-container {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgb(37,78,88);
+    background: linear-gradient(90deg, rgba(37,78,88,1) 50%, rgba(17,45,50,1) 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #EDFAE9 !important;
+}
+.contact-form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
